@@ -1,8 +1,8 @@
-public class Arrays {
+public class ArraysExample {
     public static void main(String[] args) {
 
-//        singleDimensional();
-        multiDimensional();
+        singleDimensional();
+       // multiDimensional();
 
     }
 
@@ -12,8 +12,6 @@ public class Arrays {
         cars[0] = "Hello";
 
         System.out.println(cars.length);
-        System.out.println(cars[0]);
-
         for (String car : cars) {
             System.out.println(car);
         }
