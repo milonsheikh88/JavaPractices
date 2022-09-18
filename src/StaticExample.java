@@ -1,24 +1,28 @@
-public class StaticExample {
+class StaticExample {
+    static int count = 0;
+    static String city = "Dhaka";
 
-    // static variable
-    static int age;
-    static int a = m1();
-
-    // static block
-    static {
-        System.out.println("Inside static block");
+    public void increment() {
+        count++;
     }
 
-    // static method
-    static int m1() {
-        System.out.println("from m1");
-        return 20;
+    static void change(){
+        city = "Madaripur";
     }
 
-    public static void main(String[] args) {
-        StaticExample.age = 20;
-        StaticExample.m1();
+    void display(){System.out.println("My city name is "+city);}
 
+    public static void main(String args[]) {
+        StaticExample obj1 = new StaticExample();
+        StaticExample obj2 = new StaticExample();
 
+        obj1.increment();
+        obj2.increment();
+
+        System.out.println("Obj1: count is=" + obj1.count);
+        System.out.println("Obj2: count is=" + obj2.count);
+        obj1.display();
+        StaticExample.change();
+        obj2.display();
     }
 }
