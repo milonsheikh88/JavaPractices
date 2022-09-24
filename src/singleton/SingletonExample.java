@@ -1,3 +1,5 @@
+package singleton;
+
 class Database {
 
     private static Database dbObject;
@@ -21,7 +23,7 @@ class Database {
 public class SingletonExample {
     public static void main(String[] args) {
         Database db;
-        // refers to the only object of Database
+        // refers to the only object of singleton.Database
         db= Database.getInstance();
         db.getConnection();
     }

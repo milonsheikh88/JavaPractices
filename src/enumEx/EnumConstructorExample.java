@@ -1,3 +1,5 @@
+package enumEx;
+
 enum Size {
 
     // enum constants calling the enum constructors

@@ -1,13 +1,15 @@
+package innerClass;
+
 class Polygon {
     public void display() {
-        System.out.println("Inside the Polygon class");
+        System.out.println("Inside the innerClass.Polygon class");
     }
 }
 
 class AnonymousDemo {
     public void createClass() {
 
-        // creation of anonymous class extending class Polygon
+        // creation of anonymous class extending class innerClass.Polygon
         Polygon p1 = new Polygon() {
             public void display() {
                 System.out.println("Inside an anonymous class.");

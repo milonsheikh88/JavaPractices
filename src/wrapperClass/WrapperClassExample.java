@@ -1,6 +1,6 @@
+package wrapperClass;
+
 public class WrapperClassExample {
-
-
     public static void main(String[] args) {
 
         int primitiveInt = 30;

@@ -1,3 +1,5 @@
+package staticKeyword;
+
 class StaticExample {
     static int count = 0;
     static String city = "Dhaka";

@@ -1,3 +1,5 @@
+package innerClass;
+
 class Animals {
 
     // inner class

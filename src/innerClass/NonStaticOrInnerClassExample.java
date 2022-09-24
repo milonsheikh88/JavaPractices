@@ -1,3 +1,5 @@
+package innerClass;
+
 class Car {
     String carName;
     String carType;
@@ -19,10 +21,10 @@ class Car {
 
         void setEngine() {
 
-            // Accessing the carType property of Car
+            // Accessing the carType property of innerClass.Car
             if (Car.this.carType.equals("4WD")) {
 
-                // Invoking method getCarName() of Car
+                // Invoking method getCarName() of innerClass.Car
                 if (Car.this.getCarName().equals("Crysler")) {
                     this.engineType = "Smaller";
                 } else {
@@ -44,7 +46,7 @@ public class NonStaticOrInnerClassExample{
 
     public static void main(String[] args) {
 
-        // create an object of the outer class Car
+        // create an object of the outer class innerClass.Car
         // create an object of inner class using the outer class
         Car car1 = new Car("Mazda", "8WD");
         Car.Engine engine = car1.new Engine();

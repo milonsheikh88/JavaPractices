@@ -1,3 +1,5 @@
+package innerClass;
+
 class MotherBoard {
     // static nested class
     static class USB{

@@ -1,18 +1,19 @@
+package casting;
 
-// Parent class
+// casting.Parent class
 class Parent {
     int id;
     void method() {
-        System.out.println("Method from Parent");
+        System.out.println("Method from casting.Parent");
     }
 }
 
-// Child class
+// casting.Child class
 class Child extends Parent {
     String name;
     @Override
     void method() {
-        System.out.println("Method from Child");
+        System.out.println("Method from casting.Child");
     }
 }
 
