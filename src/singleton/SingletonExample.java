@@ -27,5 +27,4 @@ public class SingletonExample {
         db= Database.getInstance();
         db.getConnection();
     }
-
 }
