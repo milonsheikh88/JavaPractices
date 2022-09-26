@@ -3,17 +3,31 @@ package innerClass;
 class Animals {
 
     // inner class
-    class Reptile {
+   class Reptile {
         public void displayInfo() {
             System.out.println("I am a reptile....");
         }
     }
 
-    // static class
+    // static nested or inner class
     static class Mammal {
         public void displayInfo() {
             System.out.println("I am a mammal....");
         }
+    }
+
+    //Private nested or inner class
+    private class InnerDisplay {
+        public void display() {
+            System.out.println("Private inner class method called");
+        }
+    }
+
+    void display() {
+        System.out.println("Outer class (Display) method called");
+        // Access the private inner class
+        InnerDisplay innerDisplay = new InnerDisplay();
+        innerDisplay.display();
     }
 }
 
@@ -30,6 +44,9 @@ class Main {
         // object creation of the static nested class
         Animals.Mammal mammal = new Animals.Mammal();
         mammal.displayInfo();
+
+        /** we don’t access the Private nested or inner class directly.*/
+        animals.display();
 
     }
 }
