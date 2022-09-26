@@ -4,8 +4,7 @@ class Database {
 
     private static Database dbObject;
 
-    private Database() {
-    }
+    private Database() {}
 
     public static Database getInstance() {
         // create object if it's not already created
