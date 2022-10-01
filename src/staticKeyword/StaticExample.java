@@ -14,6 +14,11 @@ class StaticExample {
 
     void display(){System.out.println("My city name is "+city);}
 
+    static class Inner{
+        void msg(){System.out.println("static class...");}
+    }
+
+
     public static void main(String args[]) {
         StaticExample obj1 = new StaticExample();
         StaticExample obj2 = new StaticExample();
@@ -26,5 +31,8 @@ class StaticExample {
         obj1.display();
         StaticExample.change();
         obj2.display();
+
+        StaticExample.Inner objInner = new StaticExample.Inner();
+        objInner.msg();
     }
 }

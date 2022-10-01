@@ -1,32 +1,15 @@
 package casting;
 
-// casting.Parent class
-class Parent {
-    int id;
-    void method() {
-        System.out.println("Method from casting.Parent");
-    }
-}
-
-// casting.Child class
-class Child extends Parent {
-    String name;
-    @Override
-    void method() {
-        System.out.println("Method from casting.Child");
-    }
-}
-
 public class CastingExample {
     public static void main(String[] args) {
 
-        // Upcasting
+        // Up casting
         Parent object = new Child();
         object.id = 111;
         System.out.println(object.id);
         object.method();
 
-        // Downcasting
+        // Down casting
         Child object2 = (Child)object;
 
         object2.id = 112;
