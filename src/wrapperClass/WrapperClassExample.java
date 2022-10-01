@@ -15,7 +15,13 @@ public class WrapperClassExample {
         //unboxing, now compiler will write a.intValue() internally.
         int y = objectInteger;
 
+        Integer objectInteger2 = new Integer(30);
+        int j2=objectInteger2;
+
         System.out.println(primitiveInt == objectInteger);
+        System.out.println(objectInteger2 == objectInteger);
+        System.out.println(objectInteger == j2);
+
 
     }
 
