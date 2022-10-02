@@ -17,17 +17,12 @@ class MethodReference {
 public class MethodReferenceExample {
     public static void main(String[] args) {
 
-        // Referring static method
-        Sayable sayable = MethodReference::saySomethingStatic;
+        Sayable sayable1 = MethodReference::saySomethingStatic; // Referring static method
+        sayable1.say(); // Calling interface method
 
-        // Calling interface method
-        sayable.say();
         MethodReference methodReference = new MethodReference(); // Creating object
-
-        // Referring non-static method using reference
-        Sayable sayable1 = methodReference::saySomethingNonStatic;
-        // Calling interface method
-        sayable1.say();
+        Sayable sayable2 = methodReference::saySomethingNonStatic; // Referring non-static method using reference
+        sayable2.say(); // Calling interface method
 
     }
 }
