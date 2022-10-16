@@ -6,6 +6,7 @@ public class WrapperClassExample {
         int primitiveInt = 30;
         //converting int into Integer explicitly
         Integer i = Integer.valueOf(primitiveInt);
+
         //autoboxing, now compiler will write Integer.valueOf(a) internally
         Integer j = primitiveInt;
 
